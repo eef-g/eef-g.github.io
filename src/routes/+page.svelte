@@ -1,7 +1,7 @@
 <script>
-  import { base } from "$app/paths";
+  import Navbar from "../components/navbar.svelte";
 </script>
 
+<Navbar />
 <h1>Ethan Gray's Portfolio</h1>
-<p>Deployed to GitHub Pages.</p>
-<a href="{base}/about">About</a>
+<h2>This website is still under construction. Please come back later :)</h2>
