@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "vite build && echo -n www.ethgray.com > build/CNAME",
     "deploy": "gh-pages -d build -t true"
   },
   "devDependencies": {
