@@ -10,7 +10,7 @@ Welcome to the repo for my personal website! This is a project that I will be ac
 
 ## The Color Theme
 <p align="center">
-    <a href="https://pages.github.com/" target="_blank" rel="noreferrer"> <img src="https://styles.redditmedia.com/t5_v5szo/styles/communityIcon_y3of73sxogu21.png" alt="GitHub Pages" width="60" height="60"/> </a>
+    <a href="https://www.nordtheme.com/" target="_blank" rel="noreferrer"> <img src="https://styles.redditmedia.com/t5_v5szo/styles/communityIcon_y3of73sxogu21.png" alt="Nord" width="60" height="60"/> </a>
 </p>
 
 ## Special Thanks
