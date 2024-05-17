@@ -1,116 +1,17 @@
-# sveltekit-gh-pages
+# [My Portfolio Website](https://www.ethgray.com)
+Welcome to the repo for my personal website! This is a project that I will be actively maintaining and updating whenever needed. With a personal portfolio, it allows for me to have a more tailored and user-friendly viewing experience for my best projects without having to send someone to my github profile to take a look at all the code and manually download and set up each of my projects. With a centralized website, it should make it easy to share for others to see the work that I am capable of creating.
 
-> Minimal static [SvelteKit](https://kit.svelte.dev/) set-up made deployable to [GitHub Pages](https://metonym.github.io/sveltekit-gh-pages/).
 
-## 1) Use the static adapter
+## The Tech Stack
+<p align="center">
+    <a href="https://pages.github.com/" target="_blank" rel="noreferrer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9tMi01OwPqISbJ1Qbt1mhZ-fRx3Ty_F8uMtOvWkG0Aw&s" alt="GitHub Pages" width="60" height="40"/> </a>
+    <a href="https://svelte.dev/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/1702px-Svelte_Logo.svg.png" alt="Svelte" width="40" height="40"/> </a>
+</p>
 
-Install the [SvelteKit static adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static) to prerender the app.
+## The Color Theme
+<p align="center">
+    <a href="https://pages.github.com/" target="_blank" rel="noreferrer"> <img src="https://styles.redditmedia.com/t5_v5szo/styles/communityIcon_y3of73sxogu21.png" alt="GitHub Pages" width="60" height="60"/> </a>
+</p>
 
-**package.json**
-
-```diff
-  "devDependencies": {
-+   "@sveltejs/adapter-static": "^3.0.1",
-    "@sveltejs/kit": "^2.5.4",
-    "@sveltejs/vite-plugin-svelte": "^3.0.2",
-    "gh-pages": "^6.1.1",
-    "svelte": "^4.2.12",
-    "vite": "^5.1.6"
-  }
-```
-
-**svelte.config.js**
-
-```diff
-+ import adapter from "@sveltejs/adapter-static";
-
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
-  kit: {
-+   adapter: adapter(),
-  },
-};
-
-export default config;
-
-```
-
-Ensure your top-level `+layout.js` exports `prerender = true`. Note that for SvelteKit version 2, [trailingSlash](https://kit.svelte.dev/docs/page-options#trailingslash) should be set to "always" so that the app does not redirect the URL to `/about`.
-
-```js
-// src/routes/+layout.js
-export const prerender = true;
-
-export const trailingSlash = "always";
-```
-
-## 2) Modify `paths.base` in the config
-
-`kit.paths.base` should be your repo URL subpath (see the [Vite docs](https://vitejs.dev/guide/static-deploy.html#github-pages)). In the example below, replace `/sveltekit-gh-pages` with your repository name.
-
-```diff
-import adapter from "@sveltejs/adapter-static";
-
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
-  kit: {
-    adapter: adapter(),
-+   paths: {
-+     base: process.env.NODE_ENV === "production" ? "/sveltekit-gh-pages" : "",
-+   },
-  },
-};
-
-export default config;
-
-```
-
-**Note:** You will also need to prepend relative paths with the [SvelteKit `base` path](https://kit.svelte.dev/docs/modules#$app-paths) so that your app can build successfully for production.
-
-```svelte
-<script>
-  import { base } from "$app/paths";
-</script>
-
-<a href="{base}/about">About</a>
-```
-
-## 3) Add a `.nojekyll` file to the `/static` folder
-
-The last step is to add an empty `.nojekyll` file to the static folder to [bypass Jekyll on GitHub Pages](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/). SvelteKit will copy `static` assets to the final build folder.
-
-**package.json**
-
-```json
-{
-  "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "deploy": "gh-pages -d build -t true"
-  }
-}
-```
-
-**The `deploy` script**
-
-The deploy script instructs `gh-pages` to do the following:
-
-- `-d build`: Publish the `build` folder
-- `-t true`: Include dotfiles (e.g., `.nojekyll`)
-
----
-
-## Quick start
-
-Use [degit](https://github.com/Rich-Harris/degit) to quickly scaffold a new project from this repository:
-
-```sh
-npx degit metonym/sveltekit-gh-pages my-app
-cd my-app && npm install
-```
-
-## Deploying to GitHub Pages
-
-First, build the app by running `npm run build`.
-
-Then, run `npm run deploy` to deploy the app to GitHub Pages.
+## Special Thanks
+The initial creation of this repository wouldn't be possible without the [starting repo](https://github.com/metonym/sveltekit-gh-pages) created by [Eric Lu](https://github.com/metonym)
