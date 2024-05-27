@@ -4,7 +4,9 @@
 </script>
 
 <Navbar />
-<h1>My Projects</h1>
+<div class="text-center">
+  <h1 class="h1 text-white">My Projects</h1>
+</div>
 
 <ProjectCard
   ref="https://github.com/eef-g/DOOM-Remake"
