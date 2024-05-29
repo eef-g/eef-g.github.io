@@ -24,7 +24,7 @@
     <hr />
     <h2 class="h2">
       This website is currently under construction. You can follow the
-      development of the website at the following repository:
+      development of the website on my GitHub:
     </h2>
     <div class="flex justify-center">
       <a href="https://github.com/eef-g/eef-g.github.io"
