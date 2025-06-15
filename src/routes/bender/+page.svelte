@@ -1,4 +1,6 @@
 <script>
+  import { onMount } from "svelte";
+
   // --- Reactive State ---
   let quote = "Bite my shiny metal... you know the rest.";
   let isLoading = false;
@@ -7,7 +9,7 @@
   /**
    * Fetches a quote from the API and updates the UI state.
    */
-  async function getBenderQuote() {
+  async function oldBenderQuote() {
     isLoading = true;
     errorMessage = "";
 
@@ -38,6 +40,31 @@
       showMessage("Failed to generate a quote. Please try again.");
     } finally {
       isLoading = false;
+    }
+  }
+
+  async function getBenderQuote() {
+    try {
+      // 1. Fetch the static JSON file
+      const response = await fetch("/bender.json");
+      console.log(response);
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      const quotes = await response.json();
+      console.log(quotes);
+      // 2. Pick a random quote
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      console.log(randomIndex);
+      // 3. Update the 'quote' variable, which will update the display
+      let raw = quotes[randomIndex];
+      console.log(raw);
+      quote = raw.quote;
+      console.log(quote);
+    } catch (error) {
+      console.error("Failed to fetch quotes:", error);
+      quote = "My circuits are fried! Try again later, meatbag.";
+      showMessage("Failed to load a quote. Please try again.");
     }
   }
 

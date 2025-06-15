@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && echo -n www.ethgray.com > build/CNAME",
-    "deploy": "gh-pages -d build -t true"
+    "deploy": "gh-pages -d build -t"
   },
   "devDependencies": {
     "@skeletonlabs/skeleton": "^2.10.0",
