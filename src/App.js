@@ -7,6 +7,7 @@ import About from "./pages/about";
 import Projects from "./pages/projects";
 import Contact from "./pages/contact";
 import Notfound from "./pages/404";
+import Bender from "./pages/bender";
 
 import "./app.css";
 
@@ -18,6 +19,7 @@ function App() {
 				<Route path="/about" element={<About />} />
 				<Route path="/projects" element={<Projects />} />
 				<Route path="/contact" element={<Contact />} />
+				<Route path="/bender" element={<Bender />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>
 		</div>
