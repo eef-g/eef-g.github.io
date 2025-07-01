@@ -29,11 +29,11 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "react-scripts build",
+		"build": "react-scripts build && echo -n www.ethgray.com > build/CNAME",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+		"predeploy": "npm run build && echo -n www.ethgray.com > build/CNAME",
+		"deploy": "gh-pages -d build -t"
 	},
 	"eslintConfig": {
 		"extends": [
