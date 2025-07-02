@@ -37,7 +37,7 @@ const INFO = {
 		{
 			title: "Homelab",
 			description:
-				"Configuration files and docker-compose files for my homelab",
+				"Configuration files and docker-compose files for my homelab (Publicly available repo still in progress for security reasons)",
 			logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg",
 			linkText: "View Project",
 			link: "https://github.com",

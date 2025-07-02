@@ -2,36 +2,63 @@ const SEO = [
 	{
 		page: "home",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Ethan Gray is a passionate developer who builds impactful projects and enjoys learning new technologies. Explore his portfolio, projects, and more.",
+		keywords: [
+			"Ethan Gray",
+			"ethgray",
+			"portfolio",
+			"developer",
+			"projects",
+			"software engineer",
+			"technology",
+			"coding",
+			"programming",
+		],
 	},
 
 	{
 		page: "about",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
-	},
-
-	{
-		page: "articles",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Learn more about Ethan Gray, his background, interests, and approach to software development. Discover his journey and what drives his passion for technology.",
+		keywords: [
+			"Ethan Gray",
+			"about",
+			"background",
+			"developer",
+			"software engineer",
+			"experience",
+			"technology",
+		],
 	},
 
 	{
 		page: "projects",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Browse a selection of projects by Ethan Gray, including open-source code, games, utilities, and this portfolio website.",
+		keywords: [
+			"Ethan Gray",
+			"projects",
+			"portfolio",
+			"open-source",
+			"games",
+			"utilities",
+			"software",
+			"coding",
+		],
 	},
 
 	{
 		page: "contact",
 		description:
-			"If you're interested in collaborating on a project, feel free to reach out to me. I'm always open to new ideas and opportunities.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Get in touch with Ethan Gray via email or social media. Reach out for feedback, collaboration, or questions about his work.",
+		keywords: [
+			"Ethan Gray",
+			"contact",
+			"email",
+			"social media",
+			"collaboration",
+			"feedback",
+		],
 	},
 ];
 
