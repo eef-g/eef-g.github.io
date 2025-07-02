@@ -57,7 +57,7 @@
 		"useTabs": true,
 		"tabWidth": 4
 	},
-	"homepage": "https://www.ethgray.com",
+	"homepage": "https://eef-g.github.io",
 	"devDependencies": {
 		"gh-pages": "^6.3.0"
 	}
