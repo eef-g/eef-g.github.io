@@ -3,7 +3,7 @@ const INFO = {
 		title: "Ethan Gray's Portfolio",
 		name: "Ethan Gray",
 		email: "ethgray02@gmail.com",
-		logo: "../logo.png",
+		logo: "logo.png",
 	},
 
 	socials: {
